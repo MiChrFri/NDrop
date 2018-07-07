@@ -11,11 +11,35 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    let defaults = UserDefaults.standard
+    
+    @IBOutlet var numberLabel: WKInterfaceLabel!
+    
+    @IBAction func newNumberTapped() {
+        presentTextInputController(withSuggestions: nil, allowedInputMode: WKTextInputMode.allowEmoji, completion: {(results) -> Void in
+            if results != nil && results!.count > 0 {
+                if let input = results?[0] as? String {
+                    self.numberLabel.setText(input)
+                    self.store(input)
+                }
+            }
+        })
+    }
+    
+    private func store(_ input: String) {
+        defaults.set(input, forKey: "stored")
+        defaults.synchronize()
+    }
+    
+    private func load() -> String? {
+        guard let stored = defaults.string(forKey: "stored") else { return nil }
+        return stored
+    }
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
+
+        self.numberLabel.setText(load())
     }
     
     override func willActivate() {

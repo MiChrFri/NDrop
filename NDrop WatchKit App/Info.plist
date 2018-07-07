@@ -29,5 +29,9 @@
 	<string>m.NDrop</string>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>KARNIVSV.tif</string>
+	</array>
 </dict>
 </plist>

@@ -21,6 +21,9 @@
 		7958A38920F0B55E00DC9C02 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7958A38820F0B55E00DC9C02 /* ExtensionDelegate.swift */; };
 		7958A38B20F0B55E00DC9C02 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7958A38A20F0B55E00DC9C02 /* ComplicationController.swift */; };
 		7958A38D20F0B55E00DC9C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7958A38C20F0B55E00DC9C02 /* Assets.xcassets */; };
+		7958A3A020F0BCF100DC9C02 /* KARNIVSV.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7958A39F20F0BCF000DC9C02 /* KARNIVSV.ttf */; };
+		7958A3A120F0BD4F00DC9C02 /* KARNIVSV.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7958A39F20F0BCF000DC9C02 /* KARNIVSV.ttf */; };
+		7958A3A220F0BD5000DC9C02 /* KARNIVSV.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7958A39F20F0BCF000DC9C02 /* KARNIVSV.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,7 @@
 		7958A38A20F0B55E00DC9C02 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		7958A38C20F0B55E00DC9C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7958A38E20F0B55E00DC9C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7958A39F20F0BCF000DC9C02 /* KARNIVSV.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KARNIVSV.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 		7958A37620F0B55D00DC9C02 /* NDrop WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				7958A39F20F0BCF000DC9C02 /* KARNIVSV.ttf */,
 				7958A37720F0B55D00DC9C02 /* Interface.storyboard */,
 				7958A37A20F0B55E00DC9C02 /* Assets.xcassets */,
 				7958A37C20F0B55E00DC9C02 /* Info.plist */,
@@ -311,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7958A3A220F0BD5000DC9C02 /* KARNIVSV.ttf in Resources */,
 				7958A36320F0B55D00DC9C02 /* LaunchScreen.storyboard in Resources */,
 				7958A36020F0B55D00DC9C02 /* Assets.xcassets in Resources */,
 				7958A35E20F0B55B00DC9C02 /* Main.storyboard in Resources */,
@@ -329,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7958A37B20F0B55E00DC9C02 /* Assets.xcassets in Resources */,
+				7958A3A020F0BCF100DC9C02 /* KARNIVSV.ttf in Resources */,
 				7958A37920F0B55D00DC9C02 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7958A3A120F0BD4F00DC9C02 /* KARNIVSV.ttf in Resources */,
 				7958A38D20F0B55E00DC9C02 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +546,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				INFOPLIST_FILE = "NDrop WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,6 +568,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				INFOPLIST_FILE = "NDrop WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -581,6 +591,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				IBSC_MODULE = NDrop_WatchKit_Extension;
 				INFOPLIST_FILE = "NDrop WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = m.NDrop.watchkitapp;
@@ -599,6 +610,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				IBSC_MODULE = NDrop_WatchKit_Extension;
 				INFOPLIST_FILE = "NDrop WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = m.NDrop.watchkitapp;
@@ -616,6 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				INFOPLIST_FILE = NDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -633,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				INFOPLIST_FILE = NDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -651,6 +665,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				INFOPLIST_FILE = NDropTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -671,6 +686,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9R94XJAZ89;
 				INFOPLIST_FILE = NDropTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

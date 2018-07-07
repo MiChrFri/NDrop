@@ -1,14 +1,40 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KARNIVSV.ttf">
+            <string>KarnivoreSeven</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NDrop_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label height="101" alignment="center" text="..." textAlignment="center" minimumScaleFactor="0.5" id="hr3-Yd-cGv">
+                            <color key="textColor" red="0.71866587802317339" green="1" blue="0.30920674350137289" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" name="KarnivoreSeven" family="Karnivore Seven" pointSize="60"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="New Number" id="iGB-V6-9gZ">
+                            <color key="titleColor" red="0.10496694276488533" green="0.14605805837563457" blue="0.045162136592463389" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" red="0.71866587800000004" green="1" blue="0.30920674349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="newNumberTapped" destination="AgC-eL-Hgc" id="mSC-Pa-uYF"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="numberLabel" destination="hr3-Yd-cGv" id="A3N-CV-vsi"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
